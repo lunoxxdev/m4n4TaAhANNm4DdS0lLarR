@@ -40,7 +40,7 @@ PERMISSION () {
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
-    res="Permission Denied!"
+    res="Tertolak mentah-mentah kwoekwoe"
     fi
     BURIQ
 }

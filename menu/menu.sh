@@ -251,12 +251,12 @@ echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
-export sem=$( curl -s https://raw.githubusercontent.com/driwwvpn/permission/main/versions)
+export sem=$( curl -s https://raw.githubusercontent.com/lunoxxdev/m4n4TaAhANNm4DdS0lLarR/main/version)
 export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | lolcat
-echo -e "                 • Driwwvpn Store •                 "
+echo -e "                 • Lunoxx Impostor •                 "
 echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | lolcat
 echo -e "\e[33m   System OS     \e[0m: "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`
 echo -e "\e[33m   IP Vps        \e[0m: $IPVPS"

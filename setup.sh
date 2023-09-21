@@ -147,6 +147,26 @@ clear
 	echo -e "${BGreen}Done!${NC}"
     sleep 2
 clear
+    CHATID="335842883"
+    KEY="6407054122:AAEdBIEzbDznBoSvKEM1JkBIKwlBdFIi59k"
+    TIME="10"
+    URL="https://api.telegram.org/bot$KEY/sendMessage"
+    TEXT="⚠️ Installasi Script VPN V.69 ⚠️
+    ============================
+    <code>Domain     :</code> <code>$domain</code>
+    <code>IP Vps     :</code> <code>$IP</code>
+    <code>User Script:</code> <code>$username</code>
+    <code>Exp Script :</code> <code>$exp</code>
+    ============================
+    Status Script    : Registrasi
+    ============================
+    Notifikasi Otomatis By Lunoxx
+    ============================
+"
+
+   curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
+}
+clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green      Install SSH / WS               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -210,7 +230,7 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "=====================-[ SCRIPT  DRIWW ]-===================="
+echo "=====================-[ SCRIPT  LUNOXX ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""

